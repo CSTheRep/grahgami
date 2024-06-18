@@ -5,18 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cosmie Trail Challenge</title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+  
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #FF5733, #FFC300, #FF5733); /* Mars color gradient */
+            background: url("assets/img/planet.jpg") no-repeat center center fixed; /* Background photo */
+            background-size: cover; /* Ensures the image covers the entire background */
             color: #ffffff;
             text-align: center;
             display: flex;
             flex-direction: column;
             height: 100vh;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
+        }
+
+        header {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.5em;
+            font-family: 'Cinzel Decorative', cursive;
         }
 
         .container {
@@ -24,9 +39,12 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
-        h1 {
+        .container h1 {
             margin: 0;
             font-size: 3em;
             font-family: 'Cinzel Decorative', cursive;
@@ -42,9 +60,9 @@
         }
 
         footer {
-            position: absolute;
-            bottom: 10px;
             width: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+            padding: 10px 0;
             text-align: center;
             font-size: 0.8em;
         }
@@ -59,11 +77,19 @@
         }
     </style>
 </head>
+
+
 <body>
+    <header>
+       <lil><h1><a href="index.html">HOME</a></h1></lil> 
+    </header>
+    <header>
+        <h1>Welcome to Cosmie Trail Challenge</h1>
+    </header>
     <div class="container">
         <h1>Cosmie Trail Challenge</h1>
         <div class="logo-container">
-            <img src="image.jpg" alt="Cosmie Trail Challenge" width="100" height="100">
+            <img src="" alt="Cosmie Trail Challenge Logo" width="200" height="200">
         </div>
         <div class="content">
             <h2>About the Challenge</h2>
