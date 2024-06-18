@@ -9,13 +9,14 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #FF5733, #FFC300, #FF5733); /* Mars color gradient */
+            background: url("assets/img/planet.jpg") no-repeat center center fixed; /* Background photo */
+            background-size: cover; /* Ensures the image covers the entire background */
             color: #ffffff;
             text-align: center;
             display: flex;
             flex-direction: column;
             height: 100vh;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
         }
 
@@ -60,10 +61,16 @@
     </style>
 </head>
 <body>
+    <header>
+       <li><h1><a href="index.html">HOME</a></h1></li> 
+    </header>
+    <header>
+        <h1>Welcome to Astrobotix</h1>
+    </header>
     <div class="container">
-        <h1>ASTROBOTIX</h1>
+        <h1>Astrobotix</h1>
         <div class="logo-container">
-            <img src="/assets/img/portfolio-1.png" alt="ASTROBOTIX Logo" width="200" height="200">
+            <img src="" alt="Innovation Challenge Logo" width="200" height="200">
         </div>
         <div class="content">
             <h2>About the Challenge</h2>
