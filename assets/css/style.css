@@ -387,8 +387,8 @@ header.fixed-top {
 }
 
 .portfolio .portfolio-wrapper img {
-  margin-bottom: 42px;
-  width: 100%;
+   width: 80%;
+   height: 80%;
 }
 
 .portfolio .portfolio-wrapper h4 {
