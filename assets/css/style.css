@@ -136,11 +136,32 @@ header.fixed-top {
 
 
 .social-logos {
-  background-color: #c85321;
+  background-color: #000;
   margin-top: 2%;
+  overflow:hidden;
+  white-space: nowrap;
+  padding: 0 ;
+}
+.social-logos .container {
+  max-width: 1500px;
+  max-height: 120px;
+  display: flex;
+  animation: scroll 10s linear infinite;
   
 }
 
+.social-logos .container img {
+ padding-top: 10px;
+ }
+
+@keyframes scroll {
+  from {
+      transform: translateX(-100%);
+  }
+  to {
+      transform: translateX(100%);
+  }
+}
 
 
 /* Hero Banner End */
@@ -626,10 +647,7 @@ div#subscribe-response-message {
     font-size: 44px;
   }
 
-  .social-logos {
-    padding: 35px 0;
-  }
-
+ 
   .what-we-do .boxes-wrapper {
     padding-right: 30px;
   }
