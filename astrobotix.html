@@ -10,7 +10,7 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: url("assets/img/planet.jpg") no-repeat center center fixed; /* Background photo */
+            background: url("/assets/img/planet.jpg") no-repeat center center fixed; /* Background photo */
             background-size: cover; /* Ensures the image covers the entire background */
             color: #ffffff;
             text-align: center;
@@ -42,6 +42,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            
         }
 
         .container h1 {
@@ -73,9 +74,30 @@
         }
 
         a:hover {
-            text-decoration: underline;
+            text-decoration: solid;
         }
+
+        button {
+            background-color: #FFC300; /* same color as the link hover color */
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 50px;
+          }
+          
+          button:hover {
+            background-color: #FFA07A; /* hover color */
+          }
+          
+          button a {
+            color: #ffffff; 
+            text-decoration: none;
+          }
+
+        
     </style>
+    
 </head>
 
 
@@ -89,9 +111,9 @@
     <div class="container">
         <h1>Astrobotix</h1>
         <div class="logo-container">
-            <img src="" alt="Astrobotix Logo" width="200" height="200">
-        </div>
-        <div class="content">
+            <img src="/assets/img/portfolio-2.png" alt="Astrobotix Logo" width="200" height="200">
+            <p><button><a href="#">Register</a></button></p></div>
+        
             <h2>About the Challenge</h2>
             <p>Details about the challenge will go here. Stay tuned for more information.</p>
         </div>
