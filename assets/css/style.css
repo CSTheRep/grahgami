@@ -111,7 +111,7 @@ header.fixed-top {
 /* Hero Banner Start */
 
 .hero-banner {
-  background-color: #071f2a;
+  /*background-color: #071f2a;*/
   padding: 120px 0 0 0;
 }
 
@@ -148,7 +148,9 @@ header.fixed-top {
   display: flex;
   animation: scroll 10s linear infinite;
   
+  
 }
+
 
 .social-logos .container img {
  padding-top: 10px;
