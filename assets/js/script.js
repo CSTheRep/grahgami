@@ -61,3 +61,17 @@ $(".testimonials-slider").slick({
 });
 
 
+const heroBanner = document.getElementById('hero-banner');
+
+window.addEventListener('scroll', () => {
+  
+  const scrollPosition = window.scrollY;
+
+  const heroBannerTop = heroBanner.offsetTop;
+
+  if (scrollPosition > heroBannerTop - 500) {
+    heroBanner.classList.add('active');
+  } else {
+    heroBanner.classList.remove('active');
+  }
+});

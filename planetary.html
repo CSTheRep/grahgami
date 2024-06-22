@@ -75,13 +75,30 @@
         a:hover {
             text-decoration: underline;
         }
+        button {
+            background-color: #FFC300; /* same color as the link hover color */
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 50px;
+          }
+          
+          button:hover {
+            background-color: #FFA07A; /* hover color */
+          }
+          
+          button a {
+            color: #ffffff; 
+            text-decoration: none;
+          }
     </style>
 </head>
 
 
 <body>
     <header>
-       <lil><h1><a href="index.html">HOME</a></h1></lil> 
+       <li><h1><a href="index.html">HOME</a></h1></li> 
     </header>
     <header>
         <h1>Welcome to Planetary Pathfinder Rally</h1>
@@ -89,9 +106,8 @@
     <div class="container">
         <h1>Planetary Pathfinder Rally</h1>
         <div class="logo-container">
-            <img src="" alt="Planetary Pathfinder Rally Logo" width="200" height="200">
-        </div>
-        <div class="content">
+            <img src="/assets/img/portfolio-2.png" alt="Planetary Pathfinder Rally Logo" width="200" height="200">
+            <p><button><a href="#">Register</a></button></p></div>
             <h2>About the Challenge</h2>
             <p>Details about the challenge will go here. Stay tuned for more information.</p>
         </div>

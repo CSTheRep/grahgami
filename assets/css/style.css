@@ -382,6 +382,7 @@ header.fixed-top {
 }
 
 .portfolio-container {
+  
   column-gap: 6em;
   column-count: 2;
 }
@@ -394,6 +395,7 @@ header.fixed-top {
   display: inline-block;
   width: 100%;
   break-inside: avoid;
+  
 }
 
 .portfolio.portfolio-wrapper:nth-child(odd) {
@@ -419,7 +421,11 @@ header.fixed-top {
   margin: 0;
   padding-right: 27px;
 }
-
+.portfolio-wrapper:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  
+}
 /* Portfolio End */
 /* Testimonials Start */
 
@@ -579,6 +585,7 @@ div#subscribe-response-message {
 }
 
 /* Newsletter End */
+
 /* Footer Start */
 
 .site-footer {
