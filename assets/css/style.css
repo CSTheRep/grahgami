@@ -383,6 +383,7 @@ header.fixed-top {
   display: inline-block;
   width: 100%;
   break-inside: avoid;
+  
 }
 
 .portfolio.portfolio-wrapper:nth-child(odd) {
@@ -411,6 +412,7 @@ header.fixed-top {
 .portfolio-wrapper:hover {
   transform: scale(1.05);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  
 }
 /* Portfolio End */
 /* Testimonials Start */
