@@ -60,4 +60,3 @@ $(".testimonials-slider").slick({
   ],
 });
 
-
