@@ -289,23 +289,26 @@ header.fixed-top {
 
 .timeline{
  
-  background-color:#072736;
+ 
   color:#fff;
-  padding:30px 20px;
-  margin-bottom: 30px;
-  margin: 50px;
-  box-shadow:0px 0px 10px rgba(0,0,0,.5);
+   margin-bottom: 30px;
+    box-shadow:0px 0px 10px rgba(0,0,0,.5);
+    overflow: auto;
+    padding-top: 10px;
 }
 .timeline ul{
   list-style-type:none;
-  border-left:2px solid #094a68;
+  border-top:2px solid #094a68;
   padding:10px 5px;
+  display: flex;
+  
 }
 .timeline ul li .image{
   width: 100px;
   height: 100px;
   float: right;
   } 
+  
   
 .timeline ul li{
   padding:20px 20px;
@@ -314,6 +317,8 @@ header.fixed-top {
   transition:.5s;
 }
 .timeline ul li span{
+  width: 135px;
+  height: 49px;
   display:inline-block;
   background-color:#1685b8;
   border-radius:25px;
@@ -337,14 +342,12 @@ header.fixed-top {
   height:10px;
   background-color:#34ace0;
   border-radius:50%;
-  left:-11px;
-  top:28px;
+  left:87px;
+  top:-17px;
   transition:.5s;
 }
-.timeline ul li:hover{
-  background-color:#071f2a;
-}
-.timeline ul li:hover:before{
+
+.timeline ul li:hover::before{
   background-color:#0F0;
   box-shadow:0px 0px 10px 2px #0F0;
 }
@@ -359,7 +362,6 @@ header.fixed-top {
   }
 
 }
-
 
 
 
