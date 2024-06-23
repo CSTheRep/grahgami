@@ -16,6 +16,10 @@ img {
   height: auto;
 }
 
+.back-video{
+  position: absolute;
+
+}
 /* Header CSS Start */
 
 
@@ -208,17 +212,24 @@ header.fixed-top {
   margin-bottom: 40px;
 }
 
+.what-we-do{
+  margin-top: 50px;
+}
+
 .what-we-do .boxes-wrapper {
   padding: 50px 50px 50px 30px;
-  border-radius: 30px;
+  border-radius: 50px;
   transition: all 0.35s linear;
-  background-color: #9A2A1C;
+  background-color: #0b3d91;
   white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin-inline: 30px;
+    margin-bottom: 30px;
 }
 
 .what-we-do .boxes-wrapper:hover {
+  scale: (1.25);
   box-shadow: 0 4px 20px 0 #0000001a;
 }
 
@@ -260,6 +271,11 @@ header.fixed-top {
 .what-we-do .boxes-wrapper:hover a img {
   filter: invert(1);
 }
+
+.col-md-4:hover{
+  scale: (1.25);
+}
+
 
 /* What we do End */
 /* Our progress Start */
@@ -339,41 +355,7 @@ header.fixed-top {
 
 
 
-.our-progress {
-  padding: 80px 0;
-  background-color: #fafffb;
-}
 
-.our-progress ul li {
-  padding: 40px;
-  border-right: 1px solid #c4c4c480;
-  text-align: center;
-}
-
-.our-progress ul li:last-child {
-  border-right: none;
-}
-
-.our-progress ul li img {
-  margin-bottom: 10px;
-}
-
-.our-progress ul li h4 {
-  margin-bottom: 15px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1;
-}
-
-.our-progress ul li h2 {
-  margin: 0;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 1.5;
-  color: #20b15a;
-}
-
-/* Our progress End */
 /* Portfolio Start */
 
 .portfolio {
