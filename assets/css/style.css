@@ -9,6 +9,7 @@ html {
   background-attachment: fixed;
   background-position: center;
   scroll-behavior: smooth;
+  
 }
 
 img {
@@ -122,6 +123,7 @@ header.fixed-top {
   padding: 120px 0 0 0;
   margin-bottom: 12%;
   margin-top: 50px;
+  animation: fadeIn 2s;
 }
 
 .hero-banner h2 {
@@ -186,7 +188,14 @@ header.fixed-top {
   }
 }
 
-
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* Hero Banner End */
 
 
@@ -200,6 +209,8 @@ header.fixed-top {
 
 .what-we-do {
   padding: 65px 0;
+  margin-top: 50px;
+  animation: slideIn 3s;
 }
 
 .sub-heading {
@@ -219,9 +230,7 @@ header.fixed-top {
   color: #0850ea;
 }
 
-.what-we-do{
-  margin-top: 50px;
-}
+
 
 .what-we-do .boxes-wrapper {
   padding: 50px 50px 50px 30px;
@@ -283,6 +292,14 @@ header.fixed-top {
   scale: (1.25);
 }
 
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 
 /* What we do End */
 /* Our progress Start */
@@ -510,72 +527,7 @@ header.fixed-top {
 }
 
 /* Testimonials End */
-/* Newsletter Start */
 
-.subscribe {
-  padding: 95px 0;
-}
-
-.subscribe h5.sub-heading {
-  margin-bottom: 22px;
-}
-
-.subscribe h2.main-heading {
-  text-transform: capitalize;
-  line-height: 1.5;
-  margin-bottom: 5px;
-}
-
-.subscribe p {
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 22px;
-  color: #8b8b8b;
-  margin-bottom: 40px;
-}
-
-.subscribe form input[type="email"] {
-  padding: 20px 16px;
-  border-radius: 14px;
-  border: 1px solid black;
-  width: 100%;
-  outline: 0;
-  max-height: 62px;
-}
-
-.subscribe form input::placeholder {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22px;
-  color: #8b8b8b;
-}
-
-.subscribe form input[type="submit"] {
-  position: absolute;
-  right: 4.5px;
-  padding: 8px 24px;
-  border-radius: 14px;
-  background-color: #f55f1d;
-  border: none;
-  outline: 0;
-  color: white;
-  height: 52px;
-  top: 4.5px;
-}
-
-.subscribe form {
-  position: relative;
-}
-
-div#subscribe-response-message {
-  margin-top: 15px;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 22px;
-  color: #8b8b8b;
-}
-
-/* Newsletter End */
 
 /* Footer Start */
 
@@ -917,3 +869,4 @@ div#subscribe-response-message {
 }
 
 /* Media Queries End*/
+

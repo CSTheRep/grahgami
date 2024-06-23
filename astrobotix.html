@@ -42,6 +42,8 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            width: 80%;
+            margin: 0 auto;
             
         }
 
@@ -95,7 +97,20 @@
             text-decoration: none;
           }
 
-        
+          @media only screen and (max-width: 768px) {
+            .container {
+              width: 90%;
+              padding: 10px;
+            }
+          }
+          
+          /* Styles for tablet view */
+          @media only screen and (min-width: 769px) and (max-width: 1024px) {
+            .container {
+              width: 85%;
+              padding: 15px;
+            }
+          }
     </style>
     
 </head>
