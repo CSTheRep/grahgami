@@ -1,9 +1,9 @@
 body,
 html {
   font-family: "Poppins", sans-serif;
-  background-color: #071f2a;
+  background-color: #47aad8;
   color:#ffff;
-  background-image: url(https://images.unsplash.com/photo-1630694093867-4b947d812bf0?q=80&w=1915&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-image: url(https://i.makeagif.com/media/5-29-2018/0ZMIFV.gif);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -16,17 +16,23 @@ img {
   height: auto;
 }
 
+.back-video{
+  position: absolute;
+
+}
 /* Header CSS Start */
 
 
 
 .navbar-toggler:focus {
-  box-shadow: 0 0 0 0.25rem #2227246b;
+  box-shadow: 0 0 0 0.25rem #c7d0cb6b;
 }
 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
+
+
 
 .dropdown-menu {
   margin: 0;
@@ -37,7 +43,7 @@ img {
 
 .dropdown-item:active,
 .dropdown-item:hover {
-  background-color: #20b15a;
+  background-color: #dc8417;
 }
 
 .dropdown-item {
@@ -79,7 +85,7 @@ header .navbar-expand-lg .navbar-nav {
 
 
 .text-dark {
-  color: black;
+  color: rgb(233, 209, 209);
 }
 
 .fw-regular {
@@ -104,7 +110,8 @@ header .navbar-expand-lg .navbar-nav {
 }
 
 header.fixed-top {
-  background-color: #94281C;
+  background-color: #0A1828;
+  
 }
 /* Header CSS End */
 
@@ -113,6 +120,8 @@ header.fixed-top {
 .hero-banner {
   /*background-color: #071f2a;*/
   padding: 120px 0 0 0;
+  margin-bottom: 10%;
+  margin-top: 50px;
 }
 
 .hero-banner h2 {
@@ -208,17 +217,24 @@ header.fixed-top {
   margin-bottom: 40px;
 }
 
+.what-we-do{
+  margin-top: 50px;
+}
+
 .what-we-do .boxes-wrapper {
   padding: 50px 50px 50px 30px;
-  border-radius: 30px;
+  border-radius: 50px;
   transition: all 0.35s linear;
-  background-color: #9A2A1C;
+  background-color: #0b3d91;
   white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin-inline: 30px;
+    margin-bottom: 30px;
 }
 
 .what-we-do .boxes-wrapper:hover {
+  scale: (1.25);
   box-shadow: 0 4px 20px 0 #0000001a;
 }
 
@@ -260,6 +276,11 @@ header.fixed-top {
 .what-we-do .boxes-wrapper:hover a img {
   filter: invert(1);
 }
+
+.col-md-4:hover{
+  scale: (1.25);
+}
+
 
 /* What we do End */
 /* Our progress Start */
@@ -339,41 +360,7 @@ header.fixed-top {
 
 
 
-.our-progress {
-  padding: 80px 0;
-  background-color: #fafffb;
-}
 
-.our-progress ul li {
-  padding: 40px;
-  border-right: 1px solid #c4c4c480;
-  text-align: center;
-}
-
-.our-progress ul li:last-child {
-  border-right: none;
-}
-
-.our-progress ul li img {
-  margin-bottom: 10px;
-}
-
-.our-progress ul li h4 {
-  margin-bottom: 15px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1;
-}
-
-.our-progress ul li h2 {
-  margin: 0;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 1.5;
-  color: #20b15a;
-}
-
-/* Our progress End */
 /* Portfolio Start */
 
 .portfolio {
@@ -590,7 +577,7 @@ div#subscribe-response-message {
 
 .site-footer {
   padding: 25px 0 30px;
-  background-color: #94281C;
+  background-color: #0A1828;
 }
 
 .site-footer h2 {

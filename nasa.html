@@ -1,25 +1,148 @@
+<!-- HTML -->
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Space Apps</title>
+	<title>NSAC</title>
+	<style>
+    /* style.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('/assets/img/moon.jpg'); /* replace with your background image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50px;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.info {
+  padding: 20px;
+}
+
+.info p {
+  margin-bottom: 10px;
+  font-size: large;
+}
+
+button {
+  background-color: #3e32eb; 
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+button:hover {
+  background-color: #1f04b9; 
+}
+
+button a {
+  color: #ffffff; 
+  text-decoration: none;
+}
+
+
+
+header {
+  background-color: #12148f;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.logo img {
+  width: 200px;
+  height: 90px;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav li {
+  margin-right: 100px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+  </style>
 </head>
 <body>
-    <div class="bgimg">
-        <div class="topleft">
-          <p><img src="/assets/img/2.png" alt=""></p>
-        </div>
-        <div class="middle">
-          <h1>COMING SOON</h1>
-          <hr>
-          
-        </div>
-        <div class="bottomleft">
-          <p>Stay Tuned!</p>
-        </div>
-      </div>
-
+  <header>
+    <div class="logo">
+      <img src="/assets/img/2.png" alt="Logo" >
+    </div>
+    <div class="social">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-instagram"></a>
+    </div>
+    <div class="nav">
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/index.html">Contact</a></li>
+      </ul>
+    </div>
+    
+  </header>
+	<div class="container">
+		<div class="header">
+			<h1>NASA Space Apps Challenge</h1>
+		</div>
+		<div class="info">
+			<p>This page contains info about the NSAC: NASA Space Apps Challenge</p>
+			<p>Organised by CUAC</p>
+			<p><button><a href="https://www.spaceappschallenge.org/" target="_blank">More Info</a></button> </p>
+		</div>
+	</div>
 </body>
 </html>
-    
+
