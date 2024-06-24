@@ -221,7 +221,7 @@ header.fixed-top {
 
 .boxes-wrapper .boxes-wrapper-img{
  
-  border-radius: 70%;
+  border-radius: 0;
   border: 3px solid #050505;
 
 }
@@ -247,7 +247,7 @@ header.fixed-top {
 
 .what-we-do .boxes-wrapper {
   padding: 50px 50px 50px 30px;
-  border-radius: 50px;
+  border-radius: 0;
   transition: all 0.35s linear;
   background-color: #f2b773;
   
