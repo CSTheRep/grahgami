@@ -40,6 +40,7 @@ img {
   padding: 0;
   border-radius: 0;
   border: 0;
+  
 }
 
 .dropdown-item:active,
@@ -53,7 +54,8 @@ img {
   line-height: 1;
   padding: 15px 20px;
   color: black;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #f0eeee;
+  background-color: #000000;
 }
 
 li:last-child .dropdown-item {
