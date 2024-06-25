@@ -62,6 +62,56 @@ header {
   color: #fff;
   text-decoration: none;
 }
+
+
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  margin: 40px auto;
+}
+
+.slider-inner {
+  display: flex;
+  transition: transform 0.5s;
+}
+
+.slider-item {
+  width: 300px;
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slider-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.slider-nav {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.slider-nav button {
+  background-color: #259296;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.slider-nav button:hover {
+  background-color: #ccc;
+}
+
+h3{
+  font-size: 20px;
+  color: #f88282;
+  text-align: center;
+}
         </style>
       </head>
 <body>
@@ -143,13 +193,62 @@ header {
     students about the vastness of
     space and the mysteries it holds.
     </p>
-
 </div>
-<div class="image-container">
-<img src="/assets/img/grahagaami.png" alt="cuac image" class="image">
-
+  <div class="image-container">
+   <img src="/assets/img/grahagaami.png" alt="cuac image" class="image">
+  </div>
 </div>
 
 
+<h3>Some Glimpses of our past:</h3>
+<div class="slider">
+  <div class="slider-inner">
+    <div class="slider-item">
+      <img src="/assets/img/20231008_153746.jpg" alt="cuac image">
+    </div>
+    <div class="slider-item">
+      <img src="/assets/img/20231008_160131.jpg" alt="cuac image">
+    </div>
+    <div class="slider-item">
+      <img src="/assets/img/242c1d95-8635-4f2d-be66-6b801f163eaf.jpg" alt="cuac image">
+    </div>
+    <!-- Add more slider items here -->
+  </div>
+  <div class="slider-nav">
+    <button id="prev">Prev</button>
+    <button id="next">Next</button>
+  </div>
+</div>
 
+<footer style="background-color: #259296; color: #f88282; padding: 20px; text-align: center;">
+  <p>&copy; 2023 Chandigarh University Astronomy Club. All rights reserved.</p>
+</footer>
+
+<script>
+ 
+let sliderInner = document.querySelector('.slider-inner');
+let sliderItems = document.querySelectorAll('.slider-item');
+let prevButton = document.getElementById('prev');
+let nextButton = document.getElementById('next');
+
+let currentIndex = 0;
+let totalItems = sliderItems.length;
+
+prevButton.addEventListener('click', () => {
+  currentIndex--;
+  if (currentIndex < 0) {
+    currentIndex = totalItems - 1;
+    }
+  sliderInner.style.transform = `translateX(${currentIndex * -300}px)`;
+});
+
+nextButton.addEventListener('click', () => {
+  currentIndex++;
+  if (currentIndex >= totalItems) {
+    currentIndex = 0;
+    }
+  sliderInner.style.transform = `translateX(${currentIndex * -300}px)`;
+});
+</script>
+</body>
 </html>
