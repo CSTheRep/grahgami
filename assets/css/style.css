@@ -16,7 +16,9 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+.header-name{
+  width: 60%;
+}
 .back-video{
   position: absolute;
 
