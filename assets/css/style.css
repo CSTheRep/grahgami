@@ -270,6 +270,10 @@ header.fixed-top {
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 15px;
+  text-wrap: balance;
+}
+.what-we-do .boxes-wrapper h3 {
+  text-wrap: balance;
 }
 
 .what-we-do .boxes-wrapper p {
