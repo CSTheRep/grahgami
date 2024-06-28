@@ -389,6 +389,7 @@ header.fixed-top {
   position:relative;
   cursor:pointer;
   transition:.5s;
+  width: 250px;
 }
 .timeline ul li span{
   width: 135px;
