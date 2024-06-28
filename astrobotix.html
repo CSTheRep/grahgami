@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Astrobotix</title>
+    <title>ANVESHAN</title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
   
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Oswald', sans-serif;
             background: url("/assets/img/planet.jpg") no-repeat center center fixed; /* Background photo */
             background-size: cover; /* Ensures the image covers the entire background */
             color: #ffffff;
@@ -31,7 +31,7 @@
         header h1 {
             margin: 0;
             font-size: 1.5em;
-            font-family: 'Cinzel Decorative', cursive;
+            font-family: 'Oswald', sans-serif;
         }
 
         .container {
@@ -50,7 +50,7 @@
         .container h1 {
             margin: 0;
             font-size: 3em;
-            font-family: 'Cinzel Decorative', cursive;
+            font-family: 'Oswald', sans-serif;
         }
 
         .logo-container {
@@ -111,6 +111,26 @@
               padding: 15px;
             }
           }
+          .fixed-size-section {
+            width: 800px;  /* Set the width of the section */
+            height: 200px; /* Set the height of the section */
+            border: 1px solid black;  /* Optional: add a border for better visualization */
+            padding: 20px; /* Optional: add some padding inside the section */
+            overflow: auto; /* Optional: add scrollbars if the content overflows */
+        }
+
+        .fixed-size-section p {
+            margin: 5; /* Optional: reset default paragraph margin */
+        }
+
+        .content-section p {
+            text-align: justify;
+        }
+
+        /* Apply Oswald font to all headings */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Oswald', sans-serif;
+        }
     </style>
     
 </head>
@@ -120,17 +140,22 @@
     <header>
        <li><h1><a href="index.html">HOME</a></h1></li> 
     <br>
-        <h1>Welcome to Astrobotix</h1>
+        <h1>Welcome to ANVESHAN</h1>
     </header>
     <div class="container">
-        <h1>Astrobotix</h1>
+        <h1>ANVESHAN</h1>
         <div class="logo-container">
             <img src="/assets/img/portfolio-1.png" alt="Astrobotix Logo" width="200" height="200">
+
             <p><button><a href="#">Register</a></button></p></div>
-        
+         <section class="fixed-size-section"> 
             <h2>About the Challenge</h2>
-            <p>Details about the challenge will go here. Stay tuned for more information.</p>
-        </div>
+            <section class="content-section">
+            <p>Take to the skies and master the art of aerial maneuvers! In the Drones domain, you'll 
+                race your custom-built drones through an obstacle course, putting your piloting skills and engineering prowess to the test.</p>
+            </section>
+            </section>
+            </div>
     </div>
     <footer>
         © 2024 CUAC. All Rights Reserved.

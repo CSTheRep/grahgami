@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planetary Pathfinder Rally</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+    <title>PATHANVESHAN</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
   
     <style>
         body {
@@ -31,7 +31,7 @@
         header h1 {
             margin: 0;
             font-size: 1.5em;
-            font-family: 'Cinzel Decorative', cursive;
+            font-family:'Oswald', sans-serif;
         }
 
         .container {
@@ -47,7 +47,7 @@
         .container h1 {
             margin: 0;
             font-size: 3em;
-            font-family: 'Cinzel Decorative', cursive;
+            font-family: 'Oswald', sans-serif;
         }
 
         .logo-container {
@@ -75,6 +75,7 @@
         a:hover {
             text-decoration: underline;
         }
+
         button {
             background-color: #FFC300; /* same color as the link hover color */
             border: none;
@@ -82,35 +83,58 @@
             font-size: 1.2em;
             cursor: pointer;
             border-radius: 50px;
-          }
-          
-          button:hover {
+        }
+
+        button:hover {
             background-color: #FFA07A; /* hover color */
-          }
-          
-          button a {
+        }
+
+        button a {
             color: #ffffff; 
             text-decoration: none;
-          }
+        }
+
+        .fixed-size-section {
+            width: 800px;  /* Set the width of the section */
+            height: 200px; /* Set the height of the section */
+            border: 1px solid black;  /* Optional: add a border for better visualization */
+            padding: 20px; /* Optional: add some padding inside the section */
+            overflow: auto; /* Optional: add scrollbars if the content overflows */
+        }
+
+        .fixed-size-section p {
+            margin: 5; /* Optional: reset default paragraph margin */
+        }
+
+        .content-section p {
+            text-align: justify;
+        }
+
+        /* Apply Oswald font to all headings */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Oswald', sans-serif;
+        }
     </style>
 </head>
-
-
 <body>
     <header>
-       <li><h1><a href="index.html">HOME</a></h1></li> 
+        <li><h1><a href="index.html">HOME</a></h1></li> 
     </header>
     <header>
-        <h1>Welcome to Planetary Pathfinder Rally</h1>
+        <h1>Welcome to PATHANVESHAN</h1>
     </header>
     <div class="container">
-        <h1>Planetary Pathfinder Rally</h1>
+        <h1>PATHANVESHAN</h1>
         <div class="logo-container">
             <img src="/assets/img/portfolio-2.png" alt="Planetary Pathfinder Rally Logo" width="200" height="200">
-            <p><button><a href="#">Register</a></button></p></div>
-            <h2>About the Challenge</h2>
-            <p>Details about the challenge will go here. Stay tuned for more information.</p>
+            <p><button><a href="#">Register</a></button></p>
         </div>
+        <section class="fixed-size-section">
+            <h2>About the Challenge</h2>
+            <section class="content-section">
+                <p>The Path Following Robot domain offers you the chance to design and program your very own autonomous robot. This is your opportunity to delve into robotics technology and experience the excitement of watching your creation expertly maneuver through a complex path.</p>
+            </section>
+        </section>
     </div>
     <footer>
         © 2024 CUAC. All Rights Reserved.
