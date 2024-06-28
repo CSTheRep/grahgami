@@ -189,7 +189,7 @@
 }
 
 .lgx-single-event-circle figure figcaption {
-	background: rgba(222, 1, 15, .9);
+	background: #fff;
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -245,14 +245,16 @@
 	line-height: 20px;
 	font-weight: 500;
 	margin: 0;
-	color: #fff;
+	color: #000;
+        text-align: left;
+        font-weight: bolder;
 	margin-top:10px;
 	opacity: .8;
 	text-wrap: pretty;
 }
 
 .lgx-single-event-circle:hover {
-	background: #f85b66;
+	background: #F2B77A;
 	overflow: hidden
 }
 
