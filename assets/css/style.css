@@ -221,7 +221,7 @@ header.fixed-top {
   padding: 65px 0;
   margin-top: 0;
   animation: slideIn 2s;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(246, 205, 224, 0.5);
   padding: 20px;
   border-radius: 0;
   margin-bottom: 120px;
@@ -493,8 +493,59 @@ header.fixed-top {
   
 }
 /* Portfolio End */
+.slider {
+  width: 100%;
+  overflow: hidden;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: rgba(156, 64, 64, 0.5);
+}
+
+.slider h3{
+  font-size: 30px;
+  color: #dbc0be;
+  text-align: center;
+}
+
+.slider-inner {
+  display: flex;
+  transition: transform 0.5s;
+}
+
+.slider-item {
+  width: 300px;
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slider-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.slider-nav {
+  text-align: center;
+  margin-top: 20px;
+  
+}
+
+.slider-nav button {
+  background-color: #259296;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+  
+}
 
 
+.slider-nav button:hover {
+  background-color: #ccc;
+}
 
 /* Footer Start */
 
