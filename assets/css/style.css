@@ -892,15 +892,17 @@ header.fixed-top {
 
 /* Media Queries End*/
 
+
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
 
+
 .slideshow-container img{
-  width: 300px;
-  height: 500px;
+  width: 130px;
+  height: 260px;
 }
 
 /* Caption text */
@@ -952,4 +954,58 @@ header.fixed-top {
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
+}
+
+
+/* Sponsors */
+
+.sponsor {
+  
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(240, 176, 191, 0.5);
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #7B2118;
+  
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sponsor h2 {
+  text-align: center;
+  color: #dba033;
+  margin-bottom: 20px;
+}
+
+.sponsor button {
+  background-color: #dba033;
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.sponsor button:hover {
+  background-color: #ffc107;
+  transition: background-color 0.3s ease;
+}
+
+.sponsor p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.sponsor a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.sponsor a:hover {
+  color: #dba033;
 }
