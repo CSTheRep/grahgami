@@ -338,11 +338,11 @@
        <div class="lgx-single-event lgx-single-event-circle">
        <figure>
        <a class="profile-img" href="/innovation.html"><img src="/assets/img/portfolio-5.png" alt="">
-       <h2>INNOVATION CHALLENGE</h2>
+       <h2>PRAVARTANA</h2>
        <figcaption>
        
        <div class="event-info">
-       <h3 class="title">INNOVATION CHALLENGE</h3>
+       <h3 class="title">PRAVARTANA</h3>
        <h4 class="subtitle">Push boundaries and reimagine solutions for real-world problems, harnessing creativity and collaboration across disciplines to bring groundbreaking ideas to life and shape a future of lasting impact. </h4>
        
        
@@ -457,30 +457,31 @@
    <div class="slideshow-container">
 
     <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
-      <img src="/assets/img/20231008_153746.jpg" style="width:100%">
+      <!--<div class="numbertext">1 / 4</div>-->
+      <img src="/assets/img/slider1.jpg" style="width:100%">
     <!--  <div class="text">Participants</div>-->
     </div>
     
     <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <img src="/assets/img/20231008_160131.jpg" style="width:100%">
+      <!--<div class="numbertext">2 / 4</div>-->
+      <img src="/assets/img/slider2.JPG" style="width:100%">
     <!--  <div class="text">Participants</div> -->
     </div>
     
     <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="/assets/img/242c1d95-8635-4f2d-be66-6b801f163eaf.jpg" style="width:100%">
+      <!--<div class="numbertext">3 / 4</div>-->
+      <img src="/assets/img/slider5.jpg" style="width:100%">
     <!--  <div class="text">Management  </div>-->
     </div>
-    
-    </div>
+   
+     </div>
     <br>
     
     <div style="text-align:center">
       <span class="dot"></span> 
       <span class="dot"></span> 
       <span class="dot"></span> 
+      
     </div>
    
 
@@ -560,20 +561,22 @@
         let slideIndex = 0;
         showSlides();
         
-        function showSlides() {
+        function showSlides(){
           let i;
           let slides = document.getElementsByClassName("mySlides");
           let dots = document.getElementsByClassName("dot");
-          for (i = 0; i < slides.length; i++) {
+          for (i = 0; i < slides.length; i++){
             slides[i].style.display = "none";  
           }
           slideIndex++;
-          if (slideIndex > slides.length) {slideIndex = 1}    
-          for (i = 0; i < dots.length; i++) {
+          if (slideIndex >= slides.length) {
+            slideIndex = 0; // Reset to 0 when reaching the end
+          }    
+          for (i = 0; i < dots.length; i++){
             dots[i].className = dots[i].className.replace(" active", "");
           }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
+          slides[slideIndex%slides.length].style.display = "block";  
+          dots[slideIndex%slides.length].className += " active"
           setTimeout(showSlides, 2000); 
         }
       
