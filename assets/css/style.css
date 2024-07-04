@@ -361,7 +361,7 @@ header.fixed-top {
   object-fit: cover; 
   filter: blur(5px); 
 }
-/* Our progress Start */
+/* timeline starts */
 
 .timeline{
  
@@ -442,7 +442,7 @@ header.fixed-top {
 
 
 
-/* Portfolio Start */
+/* Portfolio(events) Start */
 
 .portfolio {
   padding: 75px 0;
@@ -494,7 +494,9 @@ header.fixed-top {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   
 }
-/* Portfolio End */
+/* events End */
+
+/*slider css*/
 .slider {
   width: 100%;
   overflow: hidden;
@@ -921,7 +923,7 @@ header.fixed-top {
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
+/* Number text (1/3 etc) --- removed */
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
