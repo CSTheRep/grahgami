@@ -163,7 +163,7 @@ h3 {
 
 
   </style>
-  
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
   <header>
@@ -197,25 +197,36 @@ h3 {
 </div>
 
 
-<h3 >Some Glimpses of our past:</h3>
-<div class="slider">
-  <div class="slider-inner">
-    <div class="slider-item">
-      <img src="/assets/img/20231008_153746.jpg" alt="cuac image">
+<h3 style="text-align:center">Some Glimpses Into Our Past:</h3>
+   <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <!--<div class="numbertext">1 / 4</div>-->
+      <img src="/assets/img/slider1.jpg" style="width:100%">
+    <!--  <div class="text">Participants</div>-->
     </div>
-    <div class="slider-item">
-      <img src="/assets/img/20231008_160131.jpg" alt="cuac image">
+    
+    <div class="mySlides fade">
+      <!--<div class="numbertext">2 / 4</div>-->
+      <img src="/assets/img/slider2.JPG" style="width:100%">
+    <!--  <div class="text">Participants</div> -->
     </div>
-    <div class="slider-item">
-      <img src="/assets/img/242c1d95-8635-4f2d-be66-6b801f163eaf.jpg" alt="cuac image">
+    
+    <div class="mySlides fade">
+      <!--<div class="numbertext">3 / 4</div>-->
+      <img src="/assets/img/slider5.jpg" style="width:100%">
+    <!--  <div class="text">Management  </div>-->
     </div>
-    <!-- Add more slider items here -->
-  </div>
-  <div class="slider-nav">
-    <button id="prev">Prev</button>
-    <button id="next">Next</button>
-  </div>
-</div>
+   
+     </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      
+    </div>
 
 <footer style="background-color: #333; color: #f88282; padding: 20px; text-align: center;">
   <p>&copy; 2023 Chandigarh University Astronomy Club. All rights reserved.</p>
@@ -223,29 +234,29 @@ h3 {
 
 <script>
  
-let sliderInner = document.querySelector('.slider-inner');
-let sliderItems = document.querySelectorAll('.slider-item');
-let prevButton = document.getElementById('prev');
-let nextButton = document.getElementById('next');
-
-let currentIndex = 0;
-let totalItems = sliderItems.length;
-
-prevButton.addEventListener('click', () => {
-  currentIndex--;
-  if (currentIndex < 0) {
-    currentIndex = totalItems - 1;
+    
+  let slideIndex = 0;
+  showSlides();
+  
+  function showSlides(){
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++){
+      slides[i].style.display = "none";  
     }
-  sliderInner.style.transform = `translateX(${currentIndex * -300}px)`;
-});
-
-nextButton.addEventListener('click', () => {
-  currentIndex++;
-  if (currentIndex >= totalItems) {
-    currentIndex = 0;
+    slideIndex++;
+    if (slideIndex >= slides.length) {
+      slideIndex = 0; // Reset to 0 when reaching the end
+    }    
+    for (i = 0; i < dots.length; i++){
+      dots[i].className = dots[i].className.replace(" active", "");
     }
-  sliderInner.style.transform = `translateX(${currentIndex * -300}px)`;
-});
+    slides[slideIndex%slides.length].style.display = "block";  
+    dots[slideIndex%slides.length].className += " active"
+    setTimeout(showSlides, 2000); 
+  }
+
 </script>
 </body>
 </html>
