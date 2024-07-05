@@ -897,18 +897,7 @@ header.fixed-top {
 /* Media Queries End*/
 
 
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-  background-color: #346de041;
-}
 
-
-.slideshow-container img{
-  width: auto;
-  height: auto;
-}
 
 
 
